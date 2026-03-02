@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Praktikum Minggu 3 - Layout</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ── NAVBAR ── -->
+<nav class="navbar">
+  <div class="navbar__logo">
+    <img src="king.png" style="height: 36px; width: 36px; object-fit: cover; border-radius: 50%;">
+    <span class="logo-text">Hakimi</span>
+  </div>
+  <ul class="navbar__links">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#portfolio">Portfolio</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#social">Social</a></li>
+  </ul>
+  <div class="navbar__cta">
+    <button class="btn-primary" id="hireBtn">Hire Me</button>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<section class="hero" id="home">
+  <div class="hero__content">
+    <span class="hero__badge">Available for Work</span>
+    <h1 class="hero__title">
+      Hi, saya <span class="highlight">M Naufal Hakimi</span><br>
+      sebagai Web Developer
+    </h1>
+    <p class="hero__desc">
+      Saya membangun website yang cepat, responsif, dan tampak profesional.
+      Mari buat sesuatu yang luar biasa bersama.
+    </p>
+    <div class="hero__actions">
+      <a href="#portfolio" class="btn-primary" id="portfolioBtn">Lihat Portfolio</a>
+      <a href="#contact" class="btn-outline" id="contactBtn">Hubungi Saya</a>
+    </div>
+  </div>
+</section>
+
+<!-- ── ABOUT & SKILLS ── -->
+<section class="skills" id="about">
+  <div class="container">
+
+    <!-- BIODATA -->
+    <div class="about__wrapper">
+      <div class="about__avatar">
+        <div class="about__avatar-ring">
+          <img src="nopalganteng.PNG" alt="Foto Profil M Naufal Hakimi" id="profileImg"
+            style="width: 100%; height: 100%; border-radius: 50%; object-fit: cover;">
+        </div>
+        <span class="about__status">🟢 Available for Work</span>
+      </div>
+
+      <div class="about__bio">
+        <h2 class="about__name">M Naufal Hakimi</h2>
+        <p class="about__role">Web Developer & UI Enthusiast</p>
+
+        <p class="about__desc">
+          Halo! Saya adalah seorang mahasiswa sekaligus web developer(on training) yang passionate dalam membangun
+          antarmuka web yang bersih, cepat, dan responsif. Saya percaya bahwa kode yang baik bukan hanya
+          soal fungsi, tapi juga soal pengalaman pengguna yang menyenangkan.
+        </p>
+
+        <div class="about__detail-grid">
+          <div class="about__detail-item">
+            <span class="about__detail-label">📛 Nama Lengkap</span>
+            <span class="about__detail-value">M Naufal Hakimi</span>
+          </div>
+          <div class="about__detail-item">
+            <span class="about__detail-label">🎓 Pendidikan</span>
+            <span class="about__detail-value">S1 Sistem Informasi ( Sedang Mengampu )</span>
+          </div>
+          <div class="about__detail-item">
+            <span class="about__detail-label">📍 Domisili</span>
+            <span class="about__detail-value">Medan, Sumatera Utara</span>
+          </div>
+          <div class="about__detail-item">
+            <span class="about__detail-label">🎂 Angkatan</span>
+            <span class="about__detail-value">2024</span>
+          </div>
+          <div class="about__detail-item">
+            <span class="about__detail-label">💼 Status</span>
+            <span class="about__detail-value">Pelajar</span>
+          </div>
+          <div class="about__detail-item">
+            <span class="about__detail-label">🌐 Bahasa</span>
+            <span class="about__detail-value">Indonesia(native), English(advance)</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DIVIDER -->
+    <div class="about__divider">
+      <span>Keahlian Saya</span>
+    </div>
+
+    <!-- SKILLS -->
+    <p class="section-subtitle">Teknologi yang saya kuasai</p>
+    <div class="skills__grid">
+      <div class="skill-card">
+        <div class="skill-card__icon">📋</div>
+        <h3>HTML5</h3>
+        <p>Semantic markup, aksesibilitas, dan struktur dokumen yang baik.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card__icon">🎨</div>
+        <h3>CSS3</h3>
+        <p>Flexbox, Grid, animasi, dan responsive design untuk semua layar.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card__icon">⚡</div>
+        <h3>JavaScript</h3>
+        <p>DOM manipulation, Fetch API, dan logika interaktif modern.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card__icon">🔗</div>
+        <h3>Git & GitHub</h3>
+        <p>Version control, branching, dan kolaborasi tim secara profesional.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card__icon">⚙️</div>
+        <h3>React</h3>
+        <p>Component-based development dengan hooks dan state management.</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-card__icon">🚀</div>
+        <h3>Performance</h3>
+        <p>Optimasi loading, image compression, dan Core Web Vitals.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<<!-- ── PORTFOLIO ── -->
+<section class="portfolio" id="portfolio">
+  <div class="container">
+    <h2 class="section-title">Portfolio</h2>
+    <p class="section-subtitle">Beberapa project yang telah saya kerjakan</p>
+    <div class="portfolio__grid">
+
+      <div class="portfolio-card">
+        <div class="portfolio-card__thumb">
+          <img src="kalkulator.png" alt="Kalkulator Sederhana">
+        </div>
+        <div class="portfolio-card__body">
+          <h3>Aplikasi Kalkulator Sederhana</h3>
+          <p>Aplikasi kalkulator sederhana menggunakan Python dan Tkinter dengan bantuan ai.</p>
+          <div class="portfolio-card__tags">
+            <span class="portfolio-card__tag">Python</span>
+            <span class="portfolio-card__tag">Tkinter</span>
+          </div>
+          <a href="#" target="_blank" class="portfolio-card__btn">View Project</a>
+        </div>
+      </div>
+
+      <div class="portfolio-card">
+        <div class="portfolio-card__thumb">
+          <img src="website.png" alt="Website Hire Me">
+        </div>
+        <div class="portfolio-card__body">
+          <h3>Website Hire Me</h3>
+          <p>Website portofolio pribadi yang responsif dan modern.</p>
+          <div class="portfolio-card__tags">
+            <span class="portfolio-card__tag">HTML</span>
+            <span class="portfolio-card__tag">CSS</span>
+            <span class="portfolio-card__tag">JavaScript</span>
+          </div>
+          <a href="#" target="_blank" class="portfolio-card__btn">View Project</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── CONTACT ── -->
+<section class="contact" id="contact">
+  <div class="container">
+    <h2 class="section-title">Hubungi Saya</h2>
+    <p class="section-subtitle">Ada project? Mari diskusikan!</p>
+    <form class="contact-form" id="contactForm" novalidate>
+      <input type="text" placeholder="Nama Anda" id="cName" required>
+      <input type="email" placeholder="Email Anda" id="cEmail" required>
+      <textarea placeholder="Pesan Anda..." id="cMsg" required></textarea>
+      <button type="submit" class="btn-primary">Kirim Pesan ✉️</button>
+      <div class="form-success" id="formSuccess">✅ Pesan terkirim! Saya akan segera membalas.</div>
+    </form>
+  </div>
+</section>
+
+<!-- ── SOCIAL & CONTACT INFO ── -->
+<section class="social-contact" id="social">
+  <div class="container">
+    <h2 class="section-title">Temukan Saya</h2>
+    <p class="section-subtitle">Terhubung lewat platform favorit Anda</p>
+
+    <div class="social-contact__wrapper">
+
+      <!-- Kontak Pribadi -->
+      <div class="contact-info">
+        <h3 class="contact-info__title">📬 Kontak Pribadi</h3>
+        <ul class="contact-info__list">
+          <li>
+            <span class="contact-info__icon">✉️</span>
+            <div>
+              <span class="contact-info__label">Email</span>
+              <a href="/cdn-cgi/l/email-iribilangbosht54@gmail.com" class="contact-info__value">iribilangbosht54@gmail.com</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact-info__icon">📱</span>
+            <div>
+              <span class="contact-info__label">WhatsApp</span>
+              <a href="https://wa.me/628386816306" target="_blank" class="contact-info__value">+62 838-6816-306</a>
+            </div>
+          </li>
+          <li>
+            <span class="contact-info__icon">📍</span>
+            <div>
+              <span class="contact-info__label">Lokasi</span>
+              <span class="contact-info__value">Medan, Sumatera Utara 🇮🇩</span>
+            </div>
+          </li>
+          <li>
+            <span class="contact-info__icon">🕐</span>
+            <div>
+              <span class="contact-info__label">Jam Aktif</span>
+              <span class="contact-info__value">Senin – Jumat, 08.00 – 17.00 WIB</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Media Sosial -->
+      <div class="social-links">
+        <h3 class="social-links__title">🌐 Media Sosial</h3>
+        <div class="social-links__grid">
+
+          <a href="https://github.com/iribilangbosht54-cpu" target="_blank" class="social-card social-card--github">
+            <div class="social-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                <path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.74.08-.73.08-.73 1.2.08 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.31.76-1.61-2.67-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 3-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.3-1.23 3.3-1.23.66 1.66.24 2.88.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.21.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/>
+              </svg>
+            </div>
+            <div class="social-card__info">
+              <span class="social-card__name">GitHub</span>
+              <span class="social-card__handle">@iribilangbosht54-cpu</span>
+            </div>
+            <span class="social-card__arrow">→</span>
+          </a>
+
+          <a href="https://linkedin.com/in/M. Naufal Hakimi" target="_blank" class="social-card social-card--linkedin">
+            <div class="social-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.45-2.13 2.94v5.67H9.37V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zm1.78 13.02H3.56V9h3.56v11.45zM22.23 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.46c.98 0 1.77-.77 1.77-1.73V1.73C24 .77 23.21 0 22.23 0z"/>
+              </svg>
+            </div>
+            <div class="social-card__info">
+              <span class="social-card__name">LinkedIn</span>
+              <span class="social-card__handle">M. Naufal Hakimi</span>
+            </div>
+            <span class="social-card__arrow">→</span>
+          </a>
+
+          <a href="https://instagram.com/cre3ppz" target="_blank" class="social-card social-card--instagram">
+            <div class="social-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 1.366.062 2.633.336 3.608 1.311.975.975 1.249 2.242 1.311 3.608.058 1.266.07 1.646.07 4.85s-.012 3.584-.07 4.85c-.062 1.366-.336 2.633-1.311 3.608-.975.975-2.242 1.249-3.608 1.311-1.266.058-1.646.07-4.85.07s-3.584-.012-4.85-.07c-1.366-.062-2.633-.336-3.608-1.311-.975-.975-1.249-2.242-1.311-3.608C2.175 15.584 2.163 15.204 2.163 12s.012-3.584.07-4.85c.062-1.366.336-2.633 1.311-3.608C4.519 2.567 5.786 2.293 7.152 2.231 8.418 2.175 8.796 2.163 12 2.163zm0-2.163C8.741 0 8.332.014 7.052.072 5.197.157 3.355.673 2.014 2.014.673 3.355.157 5.197.072 7.052.014 8.332 0 8.741 0 12c0 3.259.014 3.668.072 4.948.085 1.855.601 3.697 1.942 5.038 1.341 1.341 3.183 1.857 5.038 1.942C8.332 23.986 8.741 24 12 24s3.668-.014 4.948-.072c1.855-.085 3.697-.601 5.038-1.942 1.341-1.341 1.857-3.183 1.942-5.038.058-1.28.072-1.689.072-4.948s-.014-3.668-.072-4.948c-.085-1.855-.601-3.697-1.942-5.038C20.645.673 18.803.157 16.948.072 15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
+              </svg>
+            </div>
+            <div class="social-card__info">
+              <span class="social-card__name">Instagram</span>
+              <span class="social-card__handle">@hakim1</span>
+            </div>
+            <span class="social-card__arrow">→</span>
+          </a>
+
+          <a href="https://twitter.com/Jonggun Holmes" target="_blank" class="social-card social-card--twitter">
+            <div class="social-card__icon">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28">
+                <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+              </svg>
+            </div>
+            <div class="social-card__info">
+              <span class="social-card__name">X / Twitter</span>
+              <span class="social-card__handle">@nopalIl</span>
+            </div>
+            <span class="social-card__arrow">→</span>
+          </a>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <span class="footer__brand">&#9670; Hakimi</span>
+      <p class="footer__copy">&copy; 2026 M Naufal Hakimi. Dibuat dengan HTML & CSS murni.</p>
+      <div class="footer__links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#portfolio">Portfolio</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ── MODAL HIRE ME ── -->
+<div class="modal-overlay" id="hireModal">
+  <div class="modal">
+    <button class="modal__close" id="modalClose">&#x2715;</button>
+    <div id="modalContent">
+      <h2>📱 Hubungi via WhatsApp!</h2>
+      <p>Klik tombol di bawah untuk langsung chat dengan saya di WhatsApp. Saya akan membalas apabila notif nya masuk,
+        terkadang notifnya tidak masuk hehe :3.</p>
+      <div style="text-align: center; margin-top: 1.5rem;">
+        <a href="https://wa.me/628386816306" target="_blank" class="btn-primary" style="font-size: 1rem; padding: 0.8rem 2rem;">
+          💬 Chat di WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
